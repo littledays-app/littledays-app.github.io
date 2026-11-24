@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="ko">
 <head>
+<script>
+(function(){try{if(location.search.indexOf('lang=ko')>=0||document.referrer.indexOf(location.host)>=0)return;var l=(navigator.languages&&navigator.languages[0]||navigator.language||'').toLowerCase();if(l.indexOf('ko')===0)return;location.replace(l.indexOf('ja')===0?'ja/':'en/');}catch(e){}})();
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Little Days 개인정보 처리방침</title>
@@ -8,7 +11,7 @@
   :root { --bg:#fbf7ee; --ink:#1b1b1b; --muted:#6b665d; --line:#e4ddcf; --card:#fff; --accent:#2f5bff; }
   @media (prefers-color-scheme: dark) { :root { --bg:#1a1916; --ink:#f5f2ea; --muted:#a8a296; --line:#36332d; --card:#24221e; --accent:#7f9bff; } }
   * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; word-break:keep-all; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "Noto Sans KR", sans-serif; word-break:keep-all; }
   main { max-width:720px; margin:0 auto; padding:32px 16px 64px; }
   h1 { font-size:26px; line-height:1.3; margin:0 0 6px; }
   .meta { color:var(--muted); font-size:14px; margin-bottom:20px; }
@@ -22,10 +25,15 @@
   tr:last-child td { border-bottom:0; }
   a { color:var(--accent); }
   @media (max-width:480px) { th, td { padding:8px; font-size:14px; } }
+  .langs { font-size:14px; margin:0 0 18px; }
+  .langs a, .langs b { margin-right:12px; }
 </style>
+<link rel="alternate" hreflang="en" href="https://littledays-app.github.io/privacy/en/">
+<link rel="alternate" hreflang="ja" href="https://littledays-app.github.io/privacy/ja/">
 </head>
 <body>
 <main>
+<div class="langs"><b>한국어</b><a href="en/" hreflang="en">English</a><a href="ja/" hreflang="ja">日本語</a></div>
 <h1>Little Days 개인정보 처리방침</h1>
 <div class="meta">시행일 2026년 11월 22일</div>
 <p class="lead">Little Days는 아기 사진과 기록을 내 iPhone과 내 iCloud에만 저장합니다. 개발자의 서버로는 아무것도 보내지 않습니다.</p>
